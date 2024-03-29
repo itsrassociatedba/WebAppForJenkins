@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Clean and Install') {
             steps {
-               sh 'mvn clean install'
+             .sh 'mvn clean install'
             }
         }
         stage('Package') {
             steps {
-               sh 'mvn package'
+               .sh 'mvn package'
             }
         } 
     }
